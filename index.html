@@ -1,79 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Açougue Popular | Qualidade que você reconhece</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#071a2d;--blue:#0d4f8b;--red:#b52a2a;--cream:#f5f7f9;--text:#101820;--muted:#687584;--white:#fff}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text)}
-header{height:76px;background:rgba(7,26,45,.96);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;z-index:10}
-.logo{font-family:Manrope;font-weight:800;font-size:20px;letter-spacing:.5px}.logo b{color:#d83a3a}
-nav{display:flex;gap:28px}nav a{color:#dfe8f0;text-decoration:none;font-weight:600;font-size:14px}
-.hero{min-height:600px;display:flex;align-items:center;padding:70px 8%;background:linear-gradient(90deg,rgba(4,15,26,.94) 0%,rgba(4,15,26,.72) 45%,rgba(4,15,26,.15) 100%),url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff}
-.hero-content{max-width:650px}.eyebrow{color:#e24a4a;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:13px;margin-bottom:18px}
-h1{font-family:Manrope;font-size:clamp(42px,6vw,72px);line-height:1.03;letter-spacing:-2px;margin-bottom:22px}.hero p{font-size:19px;line-height:1.65;color:#e5ebf0;max-width:570px;margin-bottom:32px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 23px;border-radius:7px;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:8px;transition:.2s}.btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff}.btn-outline{border:1px solid #b8c8d7;color:#fff}.btn-blue{background:var(--blue);color:#fff}
-section{padding:82px 8%}.section-head{max-width:700px;margin:0 auto 42px;text-align:center}.section-head h2{font-family:Manrope;font-size:38px;letter-spacing:-1px;margin-bottom:10px}.section-head p{color:var(--muted);line-height:1.6}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border:1px solid #e7ebef;border-radius:16px;padding:28px}.icon{font-size:25px;margin-bottom:18px}.feature h3{font-family:Manrope;margin-bottom:8px}.feature p{color:var(--muted);line-height:1.5}
-.highlight{background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px}.highlight h2{font-family:Manrope;font-size:38px;margin-bottom:10px}.highlight p{color:#cbd7e2;line-height:1.6}.highlight .right{text-align:right}
-.catalog-preview{background:#fff}.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.preview-card{border:1px solid #e4e8ec;border-radius:14px;padding:22px}.preview-card .category{color:var(--blue);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px}.preview-card h3{margin:9px 0;font-family:Manrope}.price{color:var(--red);font-weight:800;font-size:20px}
-.contact{text-align:center;background:#edf2f6}.contact h2{font-family:Manrope;font-size:36px;margin-bottom:12px}.contact p{color:var(--muted);margin:7px}
-footer{background:#040d16;color:#9aa9b7;text-align:center;padding:24px;font-size:14px}
-@media(max-width:800px){header{padding:0 5%}nav{gap:12px}nav a{font-size:12px}.features,.preview-grid{grid-template-columns:1fr}.highlight{display:block}.highlight .right{text-align:left;margin-top:25px}.hero{min-height:620px;padding:60px 7%}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açougue Popular — Qualidade & Tradição</title>
+
+    <!-- Fontes Google: Pacifico (Retrô) + Plus Jakarta Sans (Moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<div class="logo">AÇOUGUE <b>POPULAR</b></div>
-<nav><a href="#sobre">Sobre</a><a href="catalogo.html">Catálogo</a><a href="#contato">Contato</a></nav>
-</header>
-<a href="catalogo.html">Ver catálogo de carnes</a>
-<section class="hero">
-<div class="hero-content">
-<div class="eyebrow">Qualidade • tradição • confiança</div>
-<h1>Carne boa para todos os momentos.</h1>
-<p>Do churrasco em família à refeição do dia a dia, encontre cortes selecionados e produtos preparados com cuidado no Açougue Popular.</p>
-<div class="actions">
-<a class="btn btn-red" href="https://wa.me/5535999100998?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda%20no%20A%C3%A7ougue%20Popular.">💬 Fazer encomenda</a>
-<a class="btn btn-outline" href="catalogo.html">🥩 Ver catálogo</a>
-</div>
-</div>
-</section>
 
-<section id="sobre">
-<div class="section-head"><h2>Feito para facilitar sua escolha</h2><p>Você escolhe o corte, consulta a disponibilidade e faz sua encomenda de forma rápida pelo WhatsApp.</p></div>
-<div class="features">
-<div class="feature"><div class="icon">🥩</div><h3>Cortes selecionados</h3><p>Opções para o churrasco e para as refeições do dia a dia.</p></div>
-<div class="feature"><div class="icon">🏠</div><h3>Produção da casa</h3><p>Linguiças feitas na casa, com sabor e qualidade.</p></div>
-<div class="feature"><div class="icon">📲</div><h3>Encomenda fácil</h3><p>Consulte e reserve seus produtos diretamente pelo WhatsApp.</p></div>
-</div>
-</section>
+    <!-- OVERLAY DO MENU -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleMenu()"></div>
 
-<section class="highlight">
-<div><h2>Carne assada aos domingos 🔥</h2><p>Aceitamos encomendas. Garanta a sua com antecedência.</p></div>
-<div class="right"><a class="btn btn-red" href="https://wa.me/5535999100998?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20carne%20assada%20para%20domingo.">Encomendar para domingo</a></div>
-</section>
+    <!-- MENU LATERAL (SIDEBAR) -->
+    <aside class="sidebar" id="sidebar">
+        <div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-acougue">Açougue</span>
+                    <span class="logo-popular">Popular</span>
+                </div>
+                <button class="close-btn" onclick="toggleMenu()">&times;</button>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#inicio" onclick="toggleMenu()">🏠 Início</a>
+                <a href="#sobre" onclick="toggleMenu()">ℹ️ Sobre Nós</a>
+                <a href="#ofertas" onclick="toggleMenu()">🔥 Destaques</a>
+                <a href="#cortes" onclick="toggleMenu()">🥩 Catálogo de Carnes</a>
+                <a href="#encomenda" onclick="toggleMenu()">📦 Encomendas</a>
+                <a href="#contato" onclick="toggleMenu()">📍 Contato</a>
+            </nav>
+        </div>
+        <div class="sidebar-footer">
+            <p><strong>Açougue Popular</strong></p>
+            <p>Atendimento: Seg à Sáb das 7h às 19h</p>
+        </div>
+    </aside>
 
-<section class="catalog-preview">
-<div class="section-head"><h2>Alguns dos nossos destaques</h2><p>Veja alguns produtos e acesse o catálogo completo.</p></div>
-<div class="preview-grid">
-<div class="preview-card"><div class="category">Bovinos</div><h3>Picanha</h3><div class="price">R$ 85,00/kg</div></div>
-<div class="preview-card"><div class="category">Suínos</div><h3>Pernil suíno</h3><div class="price">R$ 25,00/kg</div></div>
-<div class="preview-card"><div class="category">Da casa</div><h3>Linguiça pura</h3><div class="price">R$ 30,00/kg</div></div>
-</div>
-<div style="text-align:center;margin-top:30px"><a class="btn btn-blue" href="catalogo.html">Ver catálogo completo →</a></div>
-</section>
+    <!-- HEADER -->
+    <header id="inicio">
+        <div class="header-left">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir Menu">☰</button>
+            <div class="logo">
+                <span class="logo-acougue">Açougue</span>
+                <span class="logo-popular">Popular</span>
+            </div>
+        </div>
+        <a class="header-btn" href="https://wa.me/5535999100998?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda%20no%20Açougue%20Popular." target="_blank">
+            💬 Encomendar
+        </a>
+    </header>
 
-<section class="contact" id="contato">
-<h2>Faça sua encomenda</h2><p>📍 Rua Tiradentes</p><p>📞 (35) 99910-0998</p><p>Consulte a disponibilidade dos produtos pelo WhatsApp.</p><br>
-<a class="btn btn-red" href="https://wa.me/5535999100998?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20produtos%20do%20A%C3%A7ougue%20Popular.">💬 Falar no WhatsApp</a>
-</section>
-<footer>© 2026 Açougue Popular — Qualidade e confiança.</footer>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tag">Qualidade & Tradição</div>
+            <h1>Carne selecionada para todos os momentos.</h1>
+            <p>Do seu churrasco de domingo às refeições do dia a dia. Oferecemos cortes nobres, higiene rigorosa e atendimento especial.</p>
+            <div class="hero-buttons">
+                <a class="btn btn-red" href="https://wa.me/5535999100998?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda%20no%20Açougue%20Popular." target="_blank">Fazer Encomenda</a>
+                <a class="btn btn-outline" href="#cortes">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section id="sobre">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="tag">Nossa História</span>
+                <h3>Tradição em servir bem, com a qualidade que sua família merece.</h3>
+                <p>No Açougue Popular, trabalhamos diariamente para levar à sua mesa os melhores cortes de carnes inspecionadas, frescas e preparadas do seu jeito.</p>
+                <p>Nosso compromisso é alinhar tradição no atendimento com o rigor técnico de higiene e manipulação, garantindo sabor e maciez em cada escolha.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Cortes de carne" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUES DO AÇOUGUE -->
+    <section id="ofertas" style="background: #f1f5f9;">
+        <div class="section-header">
+            <h2 class="title">Destaques da Semana</h2>
+            <p class="subtitle">Seleção especial com os preços mais acessíveis da região.</p>
+        </div>
+        <div class="highlights">
+            <div class="card">
+                <div>
+                    <div class="card-icon">🥩</div>
+                    <h3>Picanha Premium</h3>
+                    <p class="small">Corte macio, perfeito para aquele churrasco especial de fim de semana.</p>
+                </div>
+                <div class="price">A partir de R$ 59,90/kg</div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="card-icon">🔥</div>
+                    <h3>Carne Assada</h3>
+                    <p class="small">Servida quentinha aos domingos. Acompanha maionese e farofa sob encomenda.</p>
+                </div>
+                <div class="price">Consulte opções</div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="card-icon">🍖</div>
+                    <h3>Kit Churrasco</h3>
+                    <p class="small">Combo completo com picanha, linguiça, frango e pão de alho para a família.</p>
+                </div>
+                <div class="price">A partir de R$ 79,90</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE CARNES -->
+    <section class="catalog-section" id="cortes">
+        <div class="section-header">
+            <h2 class="title">Catálogo de Carnes</h2>
+            <p class="subtitle">Consulte nossos principais cortes disponíveis diariamente.</p>
+        </div>
+        <div class="products">
+            <div class="product"><strong>🥩 Picanha Prime</strong><span>R$ 59,90 / kg</span></div>
+            <div class="product"><strong>🥩 Alcatra</strong><span>R$ 42,90 / kg</span></div>
+            <div class="product"><strong>🥩 Contrafilé</strong><span>R$ 49,90 / kg</span></div>
+            <div class="product"><strong>🍔 Carne Moída (Especial)</strong><span>R$ 29,90 / kg</span></div>
+            <div class="product"><strong>🍖 Costela Bovina</strong><span>R$ 25,90 / kg</span></div>
+            <div class="product"><strong>🌭 Linguiça Toscana</strong><span>R$ 24,90 / kg</span></div>
+            <div class="product"><strong>🍗 Coxa e Sobrecoxa</strong><span>R$ 16,90 / kg</span></div>
+            <div class="product"><strong>🥩 Maminha</strong><span>R$ 44,90 / kg</span></div>
+        </div>
+    </section>
+
+    <!-- BANNER DE ENCOMENDA -->
+    <div style="padding: 40px 0 0 0;" id="encomenda">
+        <div class="banner">
+            <h2>Carne Assada no Domingo? 🔥</h2>
+            <p>Garanta o almoço da sua família com antecedência e evite filas.</p>
+            <a class="btn btn-red" href="https://wa.me/5535999100998?text=Olá!%20Quero%20fazer%20uma%20encomenda%20de%20carne%20assada%20para%20domingo." target="_blank">
+                💬 Fazer Encomenda pelo WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+        <div class="section-header">
+            <h2 class="title">Açougue Popular</h2>
+            <p class="subtitle">Venha nos visitar ou faça seu pedido sem sair de casa.</p>
+        </div>
+        <p>📍 <strong>Endereço:</strong> Rua Tiradentes, Centro</p>
+        <p>📞 <strong>Telefone / WhatsApp:</strong> (35) 99910-0998</p>
+        <p>⏰ <strong>Horário:</strong> Segunda a Sábado: 07h às 19h | Domingo: 07h às 12h</p>
+        <br>
+        <a class="btn btn-blue" href="https://wa.me/5535999100998?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida." target="_blank">💬 Enviar mensagem no WhatsApp</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Açougue Popular — Qualidade, variedade e confiança para a sua mesa.
+    </footer>
+
+    <!-- Arquivo JS Externo -->
+    <script src="script.js"></script>
 </body>
 </html>
